@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mivo App - Em Desenvolvimento</title>
+    <meta name="description" content="Mivo App - Em breve, uma nova experiência fitness e bem-estar">
+    <meta name="keywords" content="mivo, fitness, bem-estar, saúde, app">
+    <meta name="author" content="Mivo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="marca.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mivo.app.br/">
+    <meta property="og:title" content="Mivo App - Em Desenvolvimento">
+    <meta property="og:description" content="Em breve, uma nova experiência fitness e bem-estar">
+    <meta property="og:image" content="https://mivo.app.br/marca.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mivo.app.br/">
+    <meta property="twitter:title" content="Mivo App - Em Desenvolvimento">
+    <meta property="twitter:description" content="Em breve, uma nova experiência fitness e bem-estar">
+    <meta property="twitter:image" content="https://mivo.app.br/marca.png">
+</head>
+<body class="light-theme">
+    <div class="container">
+        <!-- Logo com Retângulo -->
+        <div class="logo-container">
+            <div class="logo-background">
+                <!-- Imagem da marca -->
+                <img src="marca.png" alt="Mivo" class="mivo-logo" loading="eager">
+            </div>
+            <div class="logo-text">MIVO APP</div>
+        </div>
+        
+        <!-- Texto Aguarde -->
+        <div class="loading-text">
+            <span class="text">Aguarde</span>
+            <span class="dots"></span>
+        </div>
+        
+        <!-- Barra de Progresso -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-label" id="progressLabel">0%</div>
+        </div>
+        
+        <!-- Texto adicional -->
+        <div class="status-text">
+            <p>Nosso aplicativo está em desenvolvimento</p>
+            <p class="subtext">Em breve uma nova experiência fitness e bem-estar</p>
+        </div>
+        
+        <!-- Toggle Tema -->
+        <div class="theme-toggle">
+            <button class="theme-btn active" id="lightThemeBtn" data-theme="light">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <circle cx="12" cy="12" r="5" fill="currentColor"/>
+                    <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
+                    <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
+                    <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Light
+            </button>
+            <button class="theme-btn" id="darkThemeBtn" data-theme="dark">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
+                </svg>
+                Dark
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

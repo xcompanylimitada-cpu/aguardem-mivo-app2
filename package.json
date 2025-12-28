@@ -1,0 +1,16 @@
+{
+  "name": "mivo-deploy-page",
+  "version": "1.0.0",
+  "description": "Landing page temporária do Mivo App",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 3000"
+  },
+  "keywords": ["mivo", "fitness", "landing-page"],
+  "author": "Mivo Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
